@@ -1,1 +1,1 @@
-A brief practice with basic JS logic for a proof of concept
+A brief practice with basic JS logic for an extremely simple proof of concept
