@@ -1,6 +1,10 @@
-// start with grey square (div)
-// on hover square turns green
-// logic begins for square to move (can move in any way)
-// off hover, game is over
-
-alert('hi')
+$(document).ready( function( e ) {
+  $( '#square' ).on({
+    mouseenter: function ( e ) {
+      alert( 'the game has began' );
+    },
+    mouseleave: function ( e ) {
+      alert( 'the game has ended' )
+    }
+  });
+});
