@@ -1,10 +1,22 @@
 $(document).ready( function( e ) {
   $( '#square' ).on({
-    mouseenter: function ( e ) {
-      alert( 'the game has began' );
+    mouseenter: function( e ) {
+      gameStart();
     },
-    mouseleave: function ( e ) {
-      alert( 'the game has ended' )
+    mouseleave: function( e ) {
+      gameEnd();
     }
   });
 });
+
+function gameStart() {
+  animateSquare();
+}
+
+function gameEnd() {
+  alert( 'The game has ended.' );
+}
+
+function animateSquare() {
+
+}
