@@ -14,6 +14,7 @@ function gameStart() {
 }
 
 function gameEnd() {
+  $( '#square' ).stop();
   alert( 'The game has ended.' );
 }
 
@@ -34,8 +35,8 @@ function animateSquare() {
 }
 
 function moveSquare( $container ) {
-  var containerWidth = ( $container.width() - 50 ),
-    containerHeight = ( $container.height() - 50 ),
+  var containerWidth = ( $container.width() - 100 ),
+    containerHeight = ( $container.height() - 100 ),
     newWidth = Math.floor( Math.random() * containerWidth ),
     newHeight = Math.floor( Math.random() * containerHeight);
 
@@ -46,7 +47,7 @@ function calculateSpeed ( previousPosition, nextPosition ) {
   var xCoordinate = Math.abs( previousPosition[0] - nextPosition[0] ),
     yCoordinate = Math.abs( previousPosition[1] - nextPosition[1] ),
     largerValue = xCoordinate > yCoordinate ? xCoordinate : yCoordinate,
-    speedModifier = 0.2,
+    speedModifier = 0.1,
     speed = Math.ceil( largerValue/speedModifier );
 
     return speed;
