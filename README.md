@@ -1,1 +1,0 @@
-A brief practice with basic JS logic for an extremely simple proof of concept
