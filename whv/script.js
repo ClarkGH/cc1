@@ -39,7 +39,7 @@ function productobj(product, i){
   self.htmlview     = ""
   self.index        = i
   self.custom_class = "col"+ ((i % 3) +1)
-  
+
   self.updatehtml= function(){
     $.get('product-template.html', function(template){
       self.htmlview = template.replace('{image}', self.photo).replace('{title}', self.title).replace('{tagline}', self.tagline).replace('{url}', self.url).replace('{custom_class}', self.custom_class);
