@@ -1,13 +1,62 @@
-body{font-family: "Arial"}
-a{text-decoration: none;}
+body {
+  font-family: "Arial"; 
+}
 
-.product-container{width:300px; border:1px solid #aaa; margin:10px; display:inline-block;}
-.product-container img{width:100%; height:auto;}
-.row{width:946px;}
+a {
+  text-decoration: none;
+}
 
-.col1{float:left;}
-.col2{margin:10px auto;}
-.col3{float:right;}
+.product-container {
+  min-width: 300px; 
+  border: 1px solid #aaa; 
+  margin: 10px; 
+  display: inline-block;
+  position: relative;
+}
 
-.title{font-size:20px;}
-.description{padding:10px;}
+.product-container img {
+  width: 100%; 
+  height: auto;
+}
+
+/*.row {
+  width: 946px;
+}
+
+.col1 {
+  float: left;
+}
+
+.col2 {
+  margin:10px auto;
+}
+
+.col3 {
+  float:right;
+}*/
+
+.title {
+  font-size:20px;
+}
+
+.description { 
+  padding:10px;
+}
+
+.description-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 5px;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #AAA;
+}
+
+.description:hover .description-overlay {
+  opacity: 1;
+}
