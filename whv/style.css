@@ -19,6 +19,17 @@ a {
   height: auto;
 }
 
+.close::before {
+  content: 'x';
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  z-index: 3;
+}
 /*.row {
   width: 946px;
 }
@@ -59,4 +70,5 @@ a {
 
 .description:hover .description-overlay {
   opacity: 1;
+  z-index: 2;
 }
