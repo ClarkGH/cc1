@@ -53,3 +53,8 @@ var page=new domobj();
 page.getproducts('data.json');
 setTimeout("console.log('building html');page.updateproducthtml();",200);
 setTimeout("page.updatedom()",500)
+setTimeout( function () {
+  $('.close').on('click', function () {
+    $(this).parent().remove();
+  });
+}, 1000);
